@@ -2,6 +2,7 @@ if getgenv().IY_LOADED then
     local isseb = Instance.new("Message", workspace)
     local doclink = "https://docs.google.com/document/d/1np77tBhf1G-yw7y-pdSILoOMVBo8X9dKg_gv0KwEbko"
     local countdown = 60
+    local appearagain = "⚠️ You will still see this warning because your executor does not support writefile."
 
     if setclipboard then
         setclipboard(doclink)
@@ -9,6 +10,7 @@ if getgenv().IY_LOADED then
 
     if writefile then
         if not isfile("DO_NOT_DELETE_Deleting_this_will_show_the_warning_again_iyrwarnmsg") then
+            appearagain = "You were warned and this message will not appear again."
             writefile("DO_NOT_DELETE_Deleting_this_will_show_the_warning_again_iyrwarnmsg", "")
         else return end
     end
@@ -27,14 +29,14 @@ If you are currently using Infinite Yield Reborn,
 I strongly advise you to stop using it. The individual behind this script is a known pedophile who continues to develop it.
 
 For more information, please check out the document:
-%s
+➡️ %s
 
-The link has also been copied to your clipboard.
+The document link has also been copied to your clipboard.
 We also advise you to spread this everywhere just so everybody knows.
 If you'd like to still use this script, it's your choice not us, we are just trying to tell everybody about this.
 
-You were warned and this message will not appear again.
-This message will disappear within %s.]], doclink, timetext)
+%s
+This message will disappear within %s.]], doclink, appearagain, timetext)
 
         wait(1)
         countdown = countdown - 1
