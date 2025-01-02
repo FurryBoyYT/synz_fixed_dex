@@ -1,3 +1,4 @@
+-- https://github.com/FurryBoyYT/synz_fixed_dex/raw/refs/heads/main/dex.lua
 -- https://github.com/LorekeeperZinnia/Dex
 
 --[[
