@@ -1,4 +1,5 @@
 if getgenv().IY_LOADED then
+    return --:
     local isseb = Instance.new("Message", workspace)
     local doclink = "https://docs.google.com/document/d/1np77tBhf1G-yw7y-pdSILoOMVBo8X9dKg_gv0KwEbko"
     local countdown = 60
